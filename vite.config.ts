@@ -18,6 +18,9 @@ const config = defineConfig({
     tanstackStart(),
     viteReact(),
   ],
+  nitro: {
+    preset: 'vercel'
+  }
 })
 
 export default config
