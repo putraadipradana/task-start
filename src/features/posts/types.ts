@@ -1,3 +1,3 @@
-import type { post } from "@/lib/db/schema";
+import type { post } from '@/lib/db/schema'
 
 export type Post = typeof post.$inferSelect
