@@ -19,8 +19,8 @@ const config = defineConfig({
     viteReact(),
   ],
   nitro: {
-    preset: 'vercel'
-  }
+    preset: 'vercel',
+  },
 })
 
 export default config

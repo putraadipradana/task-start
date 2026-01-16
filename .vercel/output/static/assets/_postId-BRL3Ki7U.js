@@ -1,0 +1,1 @@
+import{l as s,m as e,j as n}from"./main-0Bn_pQmM.js";import{u as r}from"./useSuspenseQuery-BPbeXjYh.js";function a(){const{postId:t}=s.useParams(),{data:o}=r(e(t));return n.jsx("div",{children:o?.title})}export{a as component};
