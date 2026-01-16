@@ -1,4 +1,0 @@
-const tsrStartManifest = () => ({ "routes": { "__root__": { "filePath": "/home/tyr/Documents/Projects/task-start/src/routes/__root.tsx", "children": ["/", "/posts/$postId", "/posts/"], "preloads": ["/assets/main-0Bn_pQmM.js"], "assets": [] }, "/": { "filePath": "/home/tyr/Documents/Projects/task-start/src/routes/index.tsx", "assets": [], "preloads": ["/assets/index-DLQt6Bn4.js"] }, "/posts/$postId": { "filePath": "/home/tyr/Documents/Projects/task-start/src/routes/posts/$postId.tsx", "assets": [], "preloads": ["/assets/_postId-BRL3Ki7U.js", "/assets/useSuspenseQuery-BPbeXjYh.js"] }, "/posts/": { "filePath": "/home/tyr/Documents/Projects/task-start/src/routes/posts/index.tsx", "assets": [], "preloads": ["/assets/index-GdfSUp3D.js", "/assets/useSuspenseQuery-BPbeXjYh.js"] } }, "clientEntry": "/assets/main-0Bn_pQmM.js" });
-export {
-  tsrStartManifest
-};

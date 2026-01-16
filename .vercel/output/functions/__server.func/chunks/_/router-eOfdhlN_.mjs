@@ -4,7 +4,8 @@ import { jsx, jsxs } from "react/jsx-runtime";
 import { QueryClient, queryOptions } from "@tanstack/react-query";
 import { useTheme } from "next-themes";
 import { Toaster as Toaster$1 } from "sonner";
-import { IconLoader, IconAlertOctagon, IconAlertTriangle, IconInfoCircle, IconCircleCheck } from "@tabler/icons-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Loading02Icon, AlertDiamondIcon, Alert02Icon, InformationCircleIcon, CheckmarkCircle01Icon } from "@hugeicons/core-free-icons";
 import { c as createServerFn, T as TSS_SERVER_FUNCTION, g as getServerFnById } from "./server.mjs";
 import z from "zod";
 import "@tanstack/history";
@@ -31,11 +32,11 @@ const Toaster = ({ ...props }) => {
       theme,
       className: "toaster group",
       icons: {
-        success: /* @__PURE__ */ jsx(IconCircleCheck, { className: "size-4" }),
-        info: /* @__PURE__ */ jsx(IconInfoCircle, { className: "size-4" }),
-        warning: /* @__PURE__ */ jsx(IconAlertTriangle, { className: "size-4" }),
-        error: /* @__PURE__ */ jsx(IconAlertOctagon, { className: "size-4" }),
-        loading: /* @__PURE__ */ jsx(IconLoader, { className: "size-4 animate-spin" })
+        success: /* @__PURE__ */ jsx(HugeiconsIcon, { icon: CheckmarkCircle01Icon, className: "size-4" }),
+        info: /* @__PURE__ */ jsx(HugeiconsIcon, { icon: InformationCircleIcon, className: "size-4" }),
+        warning: /* @__PURE__ */ jsx(HugeiconsIcon, { icon: Alert02Icon, className: "size-4" }),
+        error: /* @__PURE__ */ jsx(HugeiconsIcon, { icon: AlertDiamondIcon, className: "size-4" }),
+        loading: /* @__PURE__ */ jsx(HugeiconsIcon, { icon: Loading02Icon, className: "size-4 animate-spin" })
       },
       style: {
         "--normal-bg": "var(--popover)",
@@ -127,7 +128,7 @@ const getPostByIdQueryOptions = (postId) => queryOptions({
   queryKey: POST_QUERY_KEYS.byId(postId),
   queryFn: () => getPostFn({ data: postId })
 });
-const $$splitComponentImporter$1 = () => import("./index-hXDyb8EF.mjs");
+const $$splitComponentImporter$1 = () => import("./index-BVhM5Bna.mjs");
 const Route$1 = createFileRoute("/posts/")({
   component: lazyRouteComponent($$splitComponentImporter$1, "component"),
   pendingComponent: Loading,
@@ -140,7 +141,7 @@ const Route$1 = createFileRoute("/posts/")({
 function Loading() {
   return /* @__PURE__ */ jsx("div", { children: "Loading..." });
 }
-const $$splitComponentImporter = () => import("./_postId-DOKG57Rt.mjs");
+const $$splitComponentImporter = () => import("./_postId-Z5mPYQ6e.mjs");
 const Route = createFileRoute("/posts/$postId")({
   component: lazyRouteComponent($$splitComponentImporter, "component"),
   pendingComponent: () => /* @__PURE__ */ jsx("div", { children: "Loading..." }),

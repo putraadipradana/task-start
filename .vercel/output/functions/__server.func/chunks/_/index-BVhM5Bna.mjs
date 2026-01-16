@@ -1,6 +1,6 @@
 import { jsx, jsxs, Fragment } from "react/jsx-runtime";
 import { useSuspenseQuery, useQueryClient, useMutation } from "@tanstack/react-query";
-import { g as getPostsQueryOptions, P as POST_QUERY_KEYS, c as createPostFn } from "./router-GYa2mwMy.mjs";
+import { g as getPostsQueryOptions, P as POST_QUERY_KEYS, c as createPostFn } from "./router-eOfdhlN_.mjs";
 import { Link } from "@tanstack/react-router";
 import { format } from "date-fns";
 import z from "zod";
@@ -13,7 +13,8 @@ import { cva } from "class-variance-authority";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { Input as Input$1 } from "@base-ui/react/input";
-import { IconLoader } from "@tabler/icons-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Loading03Icon } from "@hugeicons/core-free-icons";
 import { Drawer as Drawer$1 } from "vaul";
 import { Separator as Separator$1 } from "@base-ui/react/separator";
 import { mergeProps } from "@base-ui/react/merge-props";
@@ -236,8 +237,10 @@ function Textarea({ className, ...props }) {
 }
 function Spinner({ className, ...props }) {
   return /* @__PURE__ */ jsx(
-    IconLoader,
+    HugeiconsIcon,
     {
+      icon: Loading03Icon,
+      strokeWidth: 2,
       role: "status",
       "aria-label": "Loading",
       className: cn("size-4 animate-spin", className),

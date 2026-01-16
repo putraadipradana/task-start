@@ -1,0 +1,1 @@
+import{l as s,m as e,j as n}from"./main-CToBnlm_.js";import{u as r}from"./useSuspenseQuery-JCZbC6NC.js";function a(){const{postId:t}=s.useParams(),{data:o}=r(e(t));return n.jsx("div",{children:o?.title})}export{a as component};

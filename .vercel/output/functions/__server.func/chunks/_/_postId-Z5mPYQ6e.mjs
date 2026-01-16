@@ -1,11 +1,12 @@
 import { jsx } from "react/jsx-runtime";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { R as Route, a as getPostByIdQueryOptions } from "./router-GYa2mwMy.mjs";
+import { R as Route, a as getPostByIdQueryOptions } from "./router-eOfdhlN_.mjs";
 import "@tanstack/react-router";
 import "@tanstack/react-router-ssr-query";
 import "next-themes";
 import "sonner";
-import "@tabler/icons-react";
+import "@hugeicons/react";
+import "@hugeicons/core-free-icons";
 import "./server.mjs";
 import "@tanstack/history";
 import "@tanstack/router-core/ssr/client";
